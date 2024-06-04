@@ -188,60 +188,58 @@
         </div>
         <!-- Facts End -->
 
-         <!-- About Start -->
+         <!-- Tokenomics -->
          <div class="container-xxl py-5">
             <div class="container py-5 px-lg-5">
                 <div class="row g-5 align-items-center">
                     
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <p class="section-title text-secondary">Tokenomics<span></span></p>
-                        <h1 class="mb-5"></h1>
+                        <h1 class="mb-5">Sator Coin Tokenomics ✨</h1>
+                        <div class="col-lg-6">
+                            <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/322738.png">
+                        </div>
                         <p class="mb-4">Are you ready to embark on a palindromic journey in decentralized finance? Join us and become part of the Sator Coin community today. Embrace the meme revolution, experience cryptographic artistry, and uncover a world where possibilities are as infinite as the symmetrical universe itself.</p>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <p class="mb-2">Public Sale</p>
-                                <p class="mb-2">60%</p>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="60" aria-valuemin="60" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <p class="mb-2">Listing</p>
-                                <p class="mb-2">20%</p>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="20" aria-valuemin="20" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <p class="mb-2">Marketing</p>
-                                <p class="mb-2">15%</p>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="15" aria-valuemin="15" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <p class="mb-2">Team</p>
-                                <p class="mb-2">5%</p>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="5" aria-valuemin="5" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                       
+
                     </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/322738.png">
-                    </div>
+
+
+                    
+                    <div class="col-lg-6 text-center text-lg-start">
+  <div id="chart_div" ></div>
+  <a style="font-size:12px;color:#BDBDBD" href="https://livechatai.com/">Sator Tokenomics Chart</a>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Fair Launch 40%',     40],
+          ['Listing on DEX 21%',  21],
+          ['Development 16% ',     16],
+          ['Airdrop 10%',         10],
+          ['Team 10%',            10],
+          ['Other 3% ',           3]
+        ]);
+
+        var options = {
+          title: 'Pie Chart',
+          colors: ['#8BC34A', '#2196F3', '#FF9800', '#9C27B0', '#009688', '#FFEB3B']
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+      }
+     </script>
+                  </div>
                 </div>
             </div>
         </div>
-        <!-- About End -->
+        <!-- tokenomics -->
 
 
     <!-- Feature Start -->
